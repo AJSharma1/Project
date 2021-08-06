@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Anjali Sharma's Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+</head>
+  <body>
+    <div class="header">
+      <a href="#default" class="logo">Anjali Sharma</a>
+      <div class="header-right">
+        <a href="index.html">HOME</a>
+        <a href="#contact">PORTFOLIO</a>
+        <a href="#about">CONTACT</a>
+      </div>
+    </div>
+
+    <div class="intro">
+      <img src="images/responsive-layout-profile.png" height="150px" width="200px" alt="My Picture" class="profile-image">
+    </div>
+    <div>
+      <p>Hi! I'm a front-end developer who loves responsive design and css.<br><br>
+         I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use<br><br>
+         I am a strong believer that tech is a bridge between the imagination and impact.<br><br>
+         Heartwarming to see you, happy to connect!</p>
+    </div>
+
+    <main style="background-color: white;" class="images"> 
+      <h2>PORTFOLIO</h2>
+        <div class="grid-container">
+        <div><img id="myImg0" src="images/portfolio-1.png" onclick="openModal()" alt="Marketing Page" style="width: 100%;" class="responsive"><figcaption>Marketing Page <br><br> This project shows the front page of a marketing website meant for a specific business I'm interested in.</figcaption></div>
+        <div><img id="myImg1" src="images/portfolio-2.png" onclick="openModal()" alt="Search Page" style="width: 100%;" class="responsive"><figcaption>Search Page <br><br> This project searchs through a specific database to find information that the user is trying to look up.</figcaption></div>
+        <div><img id="myImg2" src="images/portfolio-3.png" onclick="openModal()" alt="Travel App" style="width: 100%;" class="responsive"><figcaption>Travel App <br><br> This project compares travel times based on different transportation methods and tells you the best one.</figcaption></div>
+        <div><img id="myImg3" src="images/portfolio-4.png" onclick="openModal()" alt="Map of Favorite Spots" style="width: 100%;" class="responsive"><figcaption>Map of Favorite Spots <br><br> This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</figcaption></div>
+        <div><img id="myImg4" src="images/portfolio-5.png" onclick="openModal()" alt="Photo Gallery" style="width: 100%;" class="responsive"><figcaption>Photo Gallery <br><br> This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</figcaption></div>
+        <div><img id="myImg5" src="images/portfolio-6.png" onclick="openModal()" alt="Calculator" style="width: 100%;" class="responsive"><figcaption>Calculator <br><br> Someone can enter in the numbers they want, and press the big blue button and get the result.</figcaption></div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+
+      <script>
+       
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg0");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg1");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg2");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg3");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg4");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg5");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }     
+
+        }
+        </script>
+
+
+
+    </main>
+
+    <main class="contact">
+      <h2>CONTACT</h2><br>
+      <p>If you're interested in chatting or want more information<br> about what i've been working on, I'd love to hear from you!</p><br><br>
+      Phone <b>+1(111)555-1234</b><br><br>
+      Email <b>email@yoursite.com</b><br><br>
+    </main>
+
+    <footer>
+      <div class="header">
+        <a href="#default" class="logo">Anjali Sharma</a>
+        <div class="header-right">
+          <div class="header-down">
+          <a href="index.html">HOME</a>
+          <a href="#contact">PORTFOLIO</a>
+          <a href="#about">CONTACT</a>
+          </div>
+        </div>
+      </div> 
+    </footer>
+    
+  </body>
+  </html>
